@@ -6,4 +6,5 @@ from flask import render_template
 @app.route('/')
 def home():
     title = 'App runs'
-    return render_template('index.html')
+    popular_movies = 'popular'
+    return render_template('index.html', popular = popular_movies)
