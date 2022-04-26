@@ -6,36 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
+{% import 'macros.html' as macro %}
+
 <body align="center">
     
     <h3>POPULAR MOVIES</h3>
 
     <ul>
-        {% for popular_movie in popular_movies %}
-
-                <li>{{popular_movie.title}}</li>
-
-            {% endfor %}
+        {{ macro.displayMovieList(popular_movies) }}
     </ul>
 
     <h3>UPCOMING MOVIES</h3>
 
     <ul>
-        {%for popular_movie in upcoming_movies %}
-
-                <li>{{popular_movie.title}}</li>
-
-            {% endfor %}
+        {{ macro.displayMovieList(upcoming_movies) }}
     </ul>
 
     <h3>    NOW PLAYING MOVIES</h3>
 
     <ul>
-        {% for popular_movie in now_showing_movies %}
-
-                <li>{{popular_movie.title}}</li>
-
-            {% endfor %}
+        {{ macro.displayMovieList(now_showing_movies) }}
     </ul>
 
 </body>
