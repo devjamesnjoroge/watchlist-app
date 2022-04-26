@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../static/styles.css">
 </head>
 
 {% import 'macros.html' as macro %}
@@ -13,21 +14,21 @@
     
     <h3>POPULAR MOVIES</h3>
 
-    <ul>
+    <div class="container">
         {{ macro.displayMovieList(popular_movies) }}
-    </ul>
+    </div>
 
     <h3>UPCOMING MOVIES</h3>
 
-    <ul>
+    <div class="container">
         {{ macro.displayMovieList(upcoming_movies) }}
-    </ul>
+    </div>
 
     <h3>    NOW PLAYING MOVIES</h3>
 
-    <ul>
+    <div class="container">
         {{ macro.displayMovieList(now_showing_movies) }}
-    </ul>
+    </div>
 
 </body>
 </html>

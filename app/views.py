@@ -7,6 +7,7 @@ def home():
     popular_movies = get_movies('popular')
     upcoming_movies = get_movies('upcoming')
     now_showing_movies = get_movies('now_playing')
+
     return render_template(
         'index.html',
         popular_movies = popular_movies,

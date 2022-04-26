@@ -1,8 +1,10 @@
 {% macro displayMovieList(movie_list) %}
 
     {% for movie in movie_list %}
-
+    <div class="card">
     <li>{{movie.title}}</li>
+    <img src={{movie.poster}} id="poster">
+    </div>
 
     {% endfor %}
 

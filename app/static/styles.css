@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(3, 31, 68);
+    color: white;
+    
+}
+
+.container{
+    display: flex;
+    width: 100vw;
+    overflow-x: scroll;
+}
+
+.container ul{
+    list-style: none;
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    margin: 5vh 4vw;
+}
+
+#poster{
+   height: 20rem;
+   width: auto;
+}
+
