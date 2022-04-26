@@ -6,15 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body align="center">
+    
+    <h3>POPULAR MOVIES</h3>
 
-   <ul align="center">
-       {% for popular_movie in popular_movies %}
+    <ul>
+        {% for popular_movie in popular_movies %}
 
-            <li>{{popular_movie.title}}</li>
+                <li>{{popular_movie.title}}</li>
 
-        {% endfor %}
-   </ul>
+            {% endfor %}
+    </ul>
+
+    <h3>UPCOMING MOVIES</h3>
+
+    <ul>
+        {%for popular_movie in upcoming_movies %}
+
+                <li>{{popular_movie.title}}</li>
+
+            {% endfor %}
+    </ul>
+
+    <h3>    NOW PLAYING MOVIES</h3>
+
+    <ul>
+        {% for popular_movie in now_showing_movies %}
+
+                <li>{{popular_movie.title}}</li>
+
+            {% endfor %}
+    </ul>
 
 </body>
 </html>
